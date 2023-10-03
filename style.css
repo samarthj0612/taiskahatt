@@ -1,0 +1,401 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("./fonts/GILROY-REGULAR.OTF");
+}
+
+@font-face {
+  font-family: "migra extralight";
+  src: url("./fonts/MIGRA-EXTRALIGHT.OTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  cursor: none;
+  width: 100%;
+  /* cursor: none; */
+}
+#cursor {
+  z-index: 9999999;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2.5px solid darkgoldenrod;
+  pointer-events: none;
+}
+#cursor1 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999999;
+  display: none;
+  font-family: "migra extralight";
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  pointer-events: none;
+}
+#cursor1 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#coverup {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #ecece9;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+#coverup h1 {
+  font-size: 60px;
+  font-family: "migra extralight";
+}
+#sj-main {
+  width: 100%;
+  background-color: #ecece9;
+  padding: 0px 30px;
+  position: relative;
+  overflow: hidden;
+}
+#sj-main #main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* border: 1px solid brown; */
+}
+.main1 {
+  font-family: "gilroy";
+}
+.main1 #nav {
+  font-weight: 300;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  padding: 40px 30px;
+}
+.main1 #nav h3 {
+  font-weight: 400;
+}
+.main1 #nav #links {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main1 #nav #links a {
+  color: black;
+  text-decoration: none;
+}
+.main1 #content {
+  height: 75%;
+  width: 30%;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(https://images.pexels.com/photos/7997326/pexels-photo-7997326.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
+.main1 #content h4 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-weight: 300;
+}
+.main1 #content h4 span {
+  font-weight: 700;
+  font-family: "migra extralight";
+}
+.main1 #footer {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+.main1 #footer h4,
+.main1 #footer h5 {
+  font-weight: 400;
+}
+.main1 #footer h4 {
+  padding: 10px;
+}
+.main1 #footer h4:hover {
+  border-radius: 50%;
+  /* box-shadow: 1px 1px 20px black; */
+  /* filter: drop-shadow(1px 1px 10px black); */
+  background-color: #222;
+  color: #ecece9;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.main1 #footer h5 {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.main2 #content {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.main2 #content h4 {
+  font-weight: 400;
+  font-family: "gilroy";
+}
+.main2 #content h1 {
+  font-size: 60px;
+  font-family: "migra Extralight";
+  font-weight: 100;
+  margin: 25px 0px;
+}
+.main2 #content h1 span {
+  font-weight: 600;
+}
+.main2 #content h2 {
+  font-size: 30px;
+  font-family: "migra Extralight";
+  font-weight: 100;
+}
+.main2 #content button {
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 10px 30px;
+  margin-top: 25px;
+}
+.main3 #content {
+  height: 25vh;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+.main3 #content i {
+  font-size: 40px;
+}
+.main3 #content i:hover {
+  background-color: rgb(202, 201, 201);
+  border-radius: 50%;
+}
+.main3 #content #box {
+  height: 100%;
+  display: flex;
+}
+.main3 #content #box #img {
+  height: 100%;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.main3 #content #box #img img,
+.main3 #content #box #img svg {
+  height: 60%;
+  width: 60%;
+  object-fit: cover;
+}
+.main3 #content #lcontent {
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main3 #content #lcontent h1 {
+  font-family: "migra extralight";
+  font-weight: lighter;
+  font-size: 50px;
+}
+.main3 #content #lcontent #btns a {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  font-family: "gilroy";
+  border-radius: 50px;
+  padding: 3px 15px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+.main3 #content #lcontent #btns a:hover {
+  background-color: rgb(187, 143, 34);
+  color: white;
+  transition: all 0.5s;
+}
+.main4 #content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0%, -50%);
+  font-family: "migra extralight";
+  font-size: 22px;
+}
+.main4 #content h1,
+.main4 #content h3 {
+  font-weight: lighter;
+}
+.main4 #content h1 span {
+  font-weight: 600;
+}
+.main4 #content table {
+  margin-left: 100px;
+  border-spacing: 50px 20px;
+  font-size: 28px;
+}
+.main5 {
+  padding: 30px 50px;
+}
+.main5 #box {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-image: url(https://uploads-ssl.webflow.com/61ab77277fb3141b413e3fac/61d34d5d716b66ab70d86d3d_archive.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+.main5 #box h1 {
+  font-family: "migra extralight";
+  font-weight: lighter;
+  font-size: 100px;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+.main5 #box p {
+  margin-bottom: 50px;
+  font-family: "gilroy";
+}
+.main5 #box button {
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+}
+.main6 #content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0%, -50%);
+  font-family: "migra extralight";
+  font-size: 22px;
+}
+.main6 #content h1,
+.main6 #content h3 {
+  font-weight: lighter;
+}
+.main6 #content table {
+  /* border: 1px solid black; */
+  border-spacing: 50px 30px;
+  font-size: 15px;
+}
+.main7 #content {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0%, -50%);
+  font-family: "migra extralight";
+  font-size: 22px;
+}
+.main7 #content h1 {
+  font-weight: 500;
+}
+.main7 #content div {
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main7 #content div p {
+  font-size: 18px;
+  font-family: "gilroy";
+  font-weight: 200;
+}
+#sj-footer {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+#sj-footer #content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  /* border: 1px solid black; */
+  font-family: "gilroy";
+  text-align: center;
+}
+#sj-footer #content h5 {
+  font-weight: 400;
+}
+#sj-footer #content h1 {
+  font-size: 70px;
+  font-family: "migra extralight";
+  font-weight: 100;
+  margin-top: 100px;
+  border-bottom: 3px solid black;
+}
+#sj-footer #footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+#sj-footer #footer div {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+#sj-footer #footer div a {
+  text-decoration: none;
+  color: black;
+  font-family: "gilroy";
+}
